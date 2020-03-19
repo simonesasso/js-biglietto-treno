@@ -22,6 +22,7 @@ if(età < 18){
 // approssimo il prezzo per difetto se non è gia un numero intero e tengo solo 2 cifre decimali
 if (!Number.isInteger(prezzo)) {
   prezzoApprossimato = Math.floor(prezzo * 100) / 100;
+  prezzoApprossimato = prezzoApprossimato.toFixed(2);
   alert("ho approssimato il prezzo per difetto");
 }else{
   prezzoApprossimato = prezzo;
